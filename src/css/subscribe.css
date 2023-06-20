@@ -1,0 +1,179 @@
+.subscribe-container{
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.subscribe-title {
+      font-style: normal;
+      font-weight: 600;
+      text-align: center;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      color: var(--secondary-txt-cl);
+      margin-bottom: 24px;
+      margin-top:0;
+      display:block;
+  }
+  
+  .subscribe-text{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.29;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: var(--secondary-txt-cl);
+      margin-bottom: 24px;
+  }
+  
+  .subscribe-btn
+  {   display: block;
+      background-color: rgba(253, 146, 34, 1);
+      border-radius: 100px;
+      border-color: transparent;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      color: var(--secondary-txt-cl);
+      padding:0;
+      transition: background-color 250ms var(cubic-bezier(0.4, 0, 0.2, 1));
+  }
+
+  .subscribe-btn:hover,
+  .subscribe-btn:focus {
+    color: var(--accent-bg-cl);
+    background-color: var( --bg-cl-btn);
+  }
+      /* --------------------Edit----------------*/
+      /*Mobile*/
+@media screen and (min-width: 320px) and (max-width: 374px) {
+        .subscribe {
+          background-image: url(../img/Subscribe/Subcribe_mobi@1x.jpg);
+          padding-top: 62px;
+          padding-bottom: 62px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          .subscribe {
+          background-image: url(../img/Subscribe/Subcribe_mobi@2x.jpg);
+          }
+        }
+
+        .subscribe-title {
+          font-size: 20px;
+          line-height: 1.2;
+          width: 291px;
+      }
+
+      .subscribe-btn {
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 12px 28px 12px 28px;
+      }
+      }
+
+
+      /*Mobile*/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .subscribe {
+    background-image: url(../img/Subscribe/Subcribe_mobi@1x.jpg);
+    padding-top: 62px;
+    padding-bottom: 62px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .subscribe {
+    background-image: url(../img/Subscribe/Subcribe_mobi@2x.jpg);
+    }
+  }
+  .subscribe-title {
+    font-size: 20px;
+    line-height: 1.2;
+    width: 291px;
+}
+
+.subscribe-btn {
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 12px 28px 12px 28px;
+}
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1199px){
+  .subscribe {
+    background-image: url(../img/Subscribe/Subcribe_tab@1x.jpg);
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: url(../img/Subscribe/Subcribe_tab@2x.jpg);
+      }
+  }
+  .subscribe-title {
+    font-size: 24px;
+    line-height: 1.17;
+    width: 378px;
+}
+
+.subscribe-text {
+  width: 467px;
+}
+
+.subscribe-btn {
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 14px 40px 14px 40px;
+}
+}
+
+
+/*Desktop*/
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    background-image: url(../img/Subscribe/Subcribe_desk@1x.jpg);
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: url(../img/Subscribe/Subcribe_desk@2x.jpg);
+      }
+  }
+  .subscribe-title {
+    font-size: 24px;
+    line-height: 1.17;
+      width: 378px;
+    }
+
+.subscribe-text {
+  width: 467px;
+}
+
+.subscribe-btn {
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 14px 40px 14px 40px;
+}
+
+        .subscribe-title {
+          font-size: 20px;
+          width: 291px;
+          height: 48px;
+          margin-bottom: 24px;
+        }
+      }
+      

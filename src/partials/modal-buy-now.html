@@ -1,0 +1,155 @@
+<div class="hero-backdrop is-hidden" data-hero-modal>
+  <div class="hero-modal">
+    <button
+      type="button"
+      class="hero-modal-close-btn hero-flex"
+      data-hero-modal-close
+    >
+      <svg class="hero-modal-close-icon" width="24" height="24">
+        <use href="./img/icons.svg#close-dark"></use>
+      </svg>
+    </button>
+    <strong class="hero-order-title"
+      ><span class="hero-buy-title">bUY </span>nOW</strong
+    >
+    <!-- HERO MODAL BLOCKS -->
+    <ul class="hero-modal-list hero-flex">
+      <li class="hero-modal-item hero-flex">
+        <img
+          class="hero-modal-img"
+          srcset="
+            ./img/section-hero/optimized/img-1-84.jpg   84w,
+            ./img/section-hero/optimized/img-1-120.jpg 120w,
+            ./img/section-hero/optimized/img-1-168.jpg 168w,
+            ./img/section-hero/optimized/img-1-240.jpg 240w
+          "
+          sizes="(min-width: 1200px) 120px, (min-width: 768px) 120px, (min-width: 375px) 84px, 100vw"
+          src="./img/section-hero/optimized/img-1-84.jpg"
+          alt="Sliced chocolate"
+          width="84"
+          height="69"
+          loading="lazy"
+        />
+        <button class="hero-order-button" type="button">100 g</button>
+      </li>
+      <li class="hero-modal-item hero-flex">
+        <img
+          class="hero-modal-img"
+          srcset="
+            ./img/section-hero/optimized/img-2-84.jpg   84w,
+            ./img/section-hero/optimized/img-2-120.jpg 120w,
+            ./img/section-hero/optimized/img-2-168.jpg 168w,
+            ./img/section-hero/optimized/img-2-240.jpg 240w
+          "
+          sizes="(min-width: 1200px) 120px, (min-width: 768px) 120px, (min-width: 375px) 84px, 100vw"
+          src="./img/section-hero/optimized/img-2-84.jpg"
+          alt="Different chocolate"
+          width="84"
+          height="69"
+          loading="lazy"
+        />
+        <button class="hero-order-button" type="button">200 g</button>
+      </li>
+      <li class="hero-modal-item hero-flex">
+        <img
+          class="hero-modal-img"
+          srcset="
+            ./img/section-hero/optimized/img-3-84.jpg   84w,
+            ./img/section-hero/optimized/img-3-120.jpg 120w,
+            ./img/section-hero/optimized/img-3-168.jpg 168w,
+            ./img/section-hero/optimized/img-3-240.jpg 240w
+          "
+          sizes="(min-width: 1200px) 120px, (min-width: 768px) 120px, (min-width: 375px) 84px, 100vw"
+          src="./img/section-hero/optimized/img-3-84.jpg"
+          alt="Chocolate bars"
+          width="84"
+          height="69"
+          loading="lazy"
+        />
+        <button class="hero-order-button" type="button">300 g</button>
+      </li>
+    </ul>
+    <!-- HERO MODAL FORM -->
+    <form class="hero-modal-form hero-flex" name="modal-form" autocomplete="on">
+      <label class="hero-modal-label" for="modal_name"
+        >Personal information</label
+      >
+      <div class="hero-modal-input-wrapper hero-modal-name-wrapper hero-flex">
+        <input
+          class="hero-modal-input hero-modal-name-input"
+          type="text"
+          name="modal_name"
+          id="modal_name"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="hero-modal-input hero-modal-name-input"
+          type="text"
+          name="modal_surname"
+          id="modal_surname"
+          placeholder="Surname"
+          required
+        />
+      </div>
+      <label class="hero-modal-label" for="modal_email">Email</label>
+      <input
+        class="hero-modal-input hero-modal-input-email"
+        type="email"
+        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        name="modal_email"
+        id="modal_email"
+        placeholder="Enter your email"
+        required
+      />
+      <label class="hero-modal-label" for="modal_phone">Phone number</label>
+      <div class="hero-modal-input-wrapper hero-phone-wrapper hero-flex">
+        <div class="hero-modal-number-wrapper hero-flex">
+          <svg class="hero-modal-number-icon" width="24" height="24">
+            <use href="./img/icons.svg#flag"></use>
+          </svg>
+          <input
+            class="hero-modal-outer-text"
+            id="outer_text"
+            placeholder="+380"
+          />
+        </div>
+        <input
+          class="hero-modal-input hero-modal-right-input"
+          type="tel"
+          name="modal_phone"
+          id="modal_phone"
+          placeholder="Phone number"
+          required
+        />
+      </div>
+      <label class="hero-modal-label" for="modal_card">Card number</label>
+      <div class="hero-modal-input-wrapper hero-card-wrapper hero-flex">
+        <input
+          class="hero-modal-input hero-modal-card-input"
+          type="text"
+          name="modal_card"
+          id="modal_card"
+          placeholder="Enter card"
+          required
+        />
+        <div class="hero-modal-card-wrapper">
+          <svg class="hero-modal-card-icon" width="32" height="21">
+            <use href="./img/icons.svg#master-card"></use>
+          </svg>
+        </div>
+      </div>
+      <label class="hero-modal-label" for="modal_comment">Comment</label>
+      <textarea
+        class="hero-modal-textarea"
+        name="modal_comment"
+        id="modal_comment"
+        rows="5"
+        placeholder="Enter text"
+      ></textarea>
+      <button class="hero-modal-button hero-button" type="submit">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

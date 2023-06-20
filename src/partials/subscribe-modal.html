@@ -1,0 +1,77 @@
+
+<div class="backdrop" data-modal>
+<div class="modal">
+    
+    <button type="button" class="modal-close-btn" data-modal-close >
+        <svg         class="modal-close-btn-icon" width="24" height="24">
+            <use href="../img/icons.svg#close-white"></use>
+        </svg>
+    </button>
+    <div class="modal-backgraund-wrapper">
+        <picture>
+            <source 
+            srcset="../img/subscribe-modal/modal-sub_desk@1x.webp 1x, ../img/subscribe-modal/modal-sub_desk@2x.webp 2x"
+            media="min-width: 1200px"
+            type="image/webp"
+            />
+            <source 
+            srcset="../img/subscribe-modal-desc@1x.jpg, ../img/subscribe-modal-desc@2x.jpg"
+            media="min-width: 1200px"
+            />
+            
+            <source 
+            srcset="./img/subscribe-modal/modal-sub_tab@1x.webp 1x, ./img/subscribe-modal/modal-sub_tab@2x.webp 2x"
+            media="min-width: 768px"
+            type="image/webp"
+            />
+            <source 
+            srcset="./img/subscribe-modal-tab@1x.jpg 1x, ./img/subscribe-modal-tab@2x.jpg 2x"
+            media="min-width: 768px"
+            />
+            <source 
+            srcset="../img/subscribe-modal/modal-sub_mob@1x.webp 1x, ../img/subscribe-modal/modal-sub_mob@2x.webp 2x"
+            media="max-width: 767px"
+            type="image/webp"
+            />
+            <source 
+            srcset="../img/subscribe-modal/subscribe-modal-mob@1x.jpg 1x, ../img/subscribe-modal/subscribe-modal-mob@2x.jpg"
+            media="max-width: 767px"
+            />
+    <img  class="modal-backgraund-img"    
+  
+    src="../img/subscribe-modal/subscribe-modal-mob@1x.jpg"
+    
+     alt="bar-of-chocolate"
+     >
+     </picture>
+</div>
+    <p class="modal-subscribe-text">Explore our<br><span class="modal-subscribe-text-part">new chocolate</span>
+ first!</p>
+ <div class="modal-email-btn">
+<form class="modal-form">
+    <label class="modal-form-field">
+    <input type="email" name="user_email" class="modal-form-input" placeholder="Enter your email" pattern="^[a-zA-Z1-9]">
+</label>
+<button type="submit" class="modal-submit-btn">Submit</button>
+</form>
+</div>
+
+</div>
+
+<div class="backdrop-subscribe is-hidden" data-modal>
+    <div class="modal-sumscribe">
+        <form class="form">
+        <button class="subscribe-modal-button" type="button" data-modal-close>
+            <svg class="subscribe-modal-icon" width="24" height="24">
+            <use href="../img/icons.svg#close-white"></use>
+            </svg>
+        </button>
+        <p class="subscribe-form-text">Explore our <span class="subscribe-form-text-accent">new chocolate</span> first!</p>
+        <div class="form-field">
+            <input type="email" class="form-input" name="email" id="email" />
+            <button class="form-button" type="submit">Send</button>
+        </div>
+        </form> 
+    </div>
+
+</div>

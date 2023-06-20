@@ -1,0 +1,97 @@
+.technique-title {
+  margin-bottom: 32px;
+}
+.technique-title-accent {
+  color: var(--accent-txt-cl);
+}
+.technique-video {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  border-radius: 15px;
+  width: 280px;
+  height: 500px;
+  border: 0;
+}
+
+@media only screen and (min-width: 375px) {
+  .technique-video {
+    width: 335px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .technique-video {
+    width: 614px;
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .technique-video {
+    width: 600px;
+    height: 400px;
+  }
+}
+.technique-video-wrapper {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.technique-description {
+  background-color: var(--main-bg-cl);
+  border-radius: 15px;
+  padding: 20px 14px;
+}
+.technique-description-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  margin-bottom: 20px;
+}
+.technique-description-item {
+  position: relative;
+}
+.technique-description-text::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  background-color: var(--list-bg-cl);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  left: 0px;
+  top: 5px;
+}
+.technique-description-text {
+  margin-left: 16px;
+}
+.technique-description-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+@media only screen and (min-width: 768px) {
+  .technique-container {
+    padding: 0 77px;
+  }
+  .technique-title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  .technique-description {
+    padding: 32px;
+  }
+  .technique-description-title {
+    max-width: 350px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .technique-container {
+    padding: 0;
+  }
+  .technique-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+  .technique-video-wrapper {
+    margin-bottom: 0;
+  }
+}

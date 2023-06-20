@@ -1,0 +1,278 @@
+/**
+  |============================
+  | HERO SECTION
+  |============================
+*/
+
+.hero-flex {
+    display: flex;
+}
+
+.hero-section {
+    padding-bottom: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-section {
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-section {
+        padding-bottom: 72px;
+    }
+}
+
+.hero-container {
+    max-width: 295px;
+    padding: 395px 15px 20px 15px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/section-hero/optimized/hero-img-mob@1x.jpg);
+
+    /* outline: 2px solid rgb(255, 0, 221); */
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-container {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/section-hero/optimized/hero-img-mob@2x.jpg);
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .hero-container {
+        max-width: 335px;
+        padding: 395px 20px 20px 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-container {
+        max-width: 704px;
+        padding: 671px 40px 40px 40px;
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/section-hero/optimized/hero-img-tab@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-container {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/section-hero/optimized/hero-img-tab@2x.jpg);
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-container {
+        max-width: 1136px;
+        padding: 381px 40px 40px 40px;
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/section-hero/optimized/hero-img-desk@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-container {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/section-hero/optimized/hero-img-desk@2x.jpg);
+        }
+    }
+}
+
+.visually-hidden-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.hero-description {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-align: start;
+    margin-bottom: 32px;
+
+    color: var(--main-bg-cl);
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+    .hero-description {
+        font-size: 20px;
+        max-width: 295px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-description {
+        font-size: 28px;
+        max-width: 484px;
+    }
+}
+
+.hero-button-wrapper {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-button-wrapper {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.hero-button-list {
+    list-style: none;
+    gap: 14px;
+    margin-bottom: 32px;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-button-list {
+        margin-bottom: 0;
+        flex-wrap: nowrap;
+    }
+}
+
+.hero-button {
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+
+    padding: 12px 21.5px;
+    margin: 0 auto;
+
+    color: var(--secondary-txt-cl);
+    border-radius: 100px;
+
+    transition: color var(--cubic), background-color var(--cubic);
+}
+
+@media only screen and (min-width: 375px) {
+    .hero-button {
+        padding: 12px 28px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-button {
+        font-size: 14px;
+        padding: 14px 40px;
+    }
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    color: var (--secondary-txt-cl);
+    background-color: var(--bg-cl-btn);
+}
+
+.hero-button-item:first-child .hero-button {
+    border: none;
+    background-color: var(--accent-txt-cl);
+}
+
+.hero-button-item:first-child .hero-button:hover,
+.hero-button-item:first-child .hero-button:focus {
+    color: var(--accent-txt-cl);
+    background-color: var(--bg-cl-btn);
+}
+
+.hero-button-item:last-child .hero-button {
+    border: 1px solid var(--secondary-txt-cl);
+    background-color: transparent;
+}
+
+.hero-button-item:last-child .hero-button:hover,
+.hero-button-item:last-child .hero-button:focus {
+    color: var(--accent-txt-cl);
+    border: 1px solid var(--accent-txt-cl);
+}
+
+.hero-modal-button:hover,
+.hero-modal-button:focus {
+    background-color: var(--bg-cl-btn);
+}
+
+.hero-button-item:first-child:hover .hero-button,
+.hero-button-item:first-child:focus .hero-button {
+    color: var(--accent-txt-cl);
+    background-color: var(--bg-cl-btn);
+}
+
+.hero-button-item:last-child:hover .hero-button,
+.hero-button-item:last-child:focus .hero-button {
+    border: 1px solid var(--accent-txt-cl);
+    color: var(--accent-txt-cl);
+}
+
+.hero-scroll-link {
+    gap: 12px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    min-width: 107px;
+    margin-left: 2px;
+
+    color: var(--secondary-txt-cl);
+    text-decoration: none;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-scroll-link {
+        min-width: 130px;
+        gap: 14px;
+        font-size: 14px;
+        line-height: 1.28;
+        margin-left: 0;
+        padding-top: 7px;
+    }
+}
+
+.hero-scroll-link:hover,
+.hero-scroll-link:focus {
+    color: var(--accent-bg-cl);
+}
+
+.hero-scroll-icon {
+    padding: 6px;
+    border-radius: 50%;
+    fill: var(--accent-bg-cl);
+    background-color: var(--secondary-txt-cl);
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-scroll-icon {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+.hero-scroll-link:hover .hero-scroll-icon,
+.hero-scroll-link:focus .hero-scroll-icon {
+    fill: var(--secondary-txt-cl);
+    background-color: var(--accent-bg-cl);
+}

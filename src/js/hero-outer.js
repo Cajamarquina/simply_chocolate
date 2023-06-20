@@ -1,0 +1,1 @@
+document.getElementById("outer_text").outerText = "+380";

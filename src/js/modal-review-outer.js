@@ -1,0 +1,1 @@
+document.getElementById("modal_review_outer_text").outerText = "+380";

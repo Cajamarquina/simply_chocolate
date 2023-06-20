@@ -1,0 +1,79 @@
+<!-- MODAL-REVIEW WINDOW -->
+<div class="backdrop-modal-review is-hidden" data-modal-review>
+  <div class="modal-review">
+    <button
+      type="button"
+      class="modal-review-close-btn modal-review-flex"
+      data-modal-review-close
+    >
+      <svg class="modal-review-close-icon" width="24" height="24">
+        <use href="./img/icons.svg#close-dark"></use>
+      </svg>
+    </button>
+    <strong class="modal-review-first-title modal-review-title"
+      >LEAVE A REVIEW ABOUT
+      <span class="modal-review-second-title modal-review-title"
+        >OUR CHOCOLATE</span
+      ></strong
+    >
+    <!-- MODAL-REVIEW FORM -->
+    <form
+      class="modal-review-form modal-review-flex"
+      name="modal-form"
+      autocomplete="on"
+    >
+      <input
+        class="modal-review-name-input modal-review-input"
+        type="text"
+        name="modal_review_name"
+        id="modal_review_name"
+        placeholder="Name"
+        required
+      />
+      <input
+        class="modal-review-email-input modal-review-input"
+        type="email"
+        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        name="modal_review_email"
+        id="modal_review_email"
+        placeholder="Email"
+        required
+      />
+      <div class="modal-review-phone-wrapper modal-review-flex">
+        <div class="modal-review-outer-wrapper modal-review-flex">
+          <svg class="modal-review-phone-icon" width="24" height="24">
+            <use href="./img/icons.svg#flag"></use>
+          </svg>
+          <input
+            class="modal-review-outer-text"
+            id="modal_review_outer_text"
+            placeholder="+380"
+          />
+        </div>
+        <input
+          class="modal-review-right-input modal-review-input"
+          type="tel"
+          name="modal_review_phone"
+          id="modal_review_phone"
+          placeholder="Phone number"
+          required
+        />
+      </div>
+      <textarea
+        class="modal-review-textarea"
+        name="modal_review_comment"
+        id="modal_review_comment"
+        rows="5"
+        placeholder="Enter text"
+      ></textarea>
+      <button class="modal-review-button modal-review-button" type="submit">
+        Send
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Підключення скриптів modal-review
+import './modal-review.js';
+import './modal-review-form.js'; - ВИДАЛИТИ ПІДКЛЮЧЕННЯ ЦЬОГО ФАЙЛУ ІЗ JS
+import './modal-review-outer.js'; -->
